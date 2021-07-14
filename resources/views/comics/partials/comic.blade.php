@@ -1,4 +1,5 @@
 <h1>COMIC</h1>
+{{-- {{dd(Route::currentRouteName())}} --}}
 <div class="text-center">
     <img class='py-3' src="{{$comic->poster}}" alt="">
     <div class="body">

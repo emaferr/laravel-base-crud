@@ -10002,3 +10002,10 @@ h3 {
     border-color: #dee2e6;
   }
 }
+a {
+  color: #414141 !important;
+}
+
+.active {
+  color: #3490dc !important;
+}
