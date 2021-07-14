@@ -1,5 +1,7 @@
 <h1 class="pb-2">COMICS</h1>
-<a href="{{route('comics.create')}}">Add</a>
+<div class="text-right pb-3 px-3">
+    <a href="{{route('comics.create')}}"><i style="font-size: 2rem" class="fas fa-plus-square"></i></a>
+</div>
 <table class="table">
     <thead>
         <tr>
@@ -7,7 +9,7 @@
             <th>POSTER</th>
             <th>TITLE</th>
             <th>AUTOR</th>
-            <th>DESC</th>
+            <th>DESCRIPTION</th>
             <th>PRICE</th>
         </tr>
     </thead>
