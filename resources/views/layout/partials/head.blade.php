@@ -8,6 +8,8 @@
 
         <title>@yield('title','Laravel')</title>
 
+        <link rel="shortcut icon" type="image/png" href="https://freepikpsd.com/media/2020/01/Letter-M-PNG-Picture.png"/>
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
 
