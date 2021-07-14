@@ -20,11 +20,11 @@
         @foreach ($comics as $comic)
         <tr>
             <td scope="row">{{$comic->id}}</td>
-            <td><img width="100" src="{{$comic->poster}}" alt=""></td>
+            <td><a href="{{route('comics.show',$comic->id)}}"><img width="100" src="{{$comic->poster}}" alt=""></a></td>
             <td>{{$comic->title}}</td>
             <td>{{$comic->autor}}</td>
             <td>{{$comic->desc}}</td>
-            <td>{{$comic->price}}</td>
+            <td>&euro;&nbsp;{{$comic->price}}</td>
         </tr>
         @endforeach
     </tbody>
