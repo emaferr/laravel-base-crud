@@ -18,3 +18,6 @@ Route::get('/', 'PageController@index')->name('home');
 
 // Comics Page
 Route::resource('comics', ComicController::class);
+
+// Movies Page
+Route::resource('movies', MovieController::class);
