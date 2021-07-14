@@ -16,7 +16,7 @@
 
     <body>
 
-        <header>SITE HEADER&nbsp;<a href="">Home</a>&nbsp;<a href="">Comics</a></header>
+        <header>SITE HEADER&nbsp;<a href="{{route('home')}}">Home</a>&nbsp;<a href="{{route('comics')}}">Comics</a></header>
 
         <main>@yield('content')</main>
 
