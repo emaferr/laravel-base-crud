@@ -1,6 +1,6 @@
 <h1 class="pb-2">COMICS</h1>
 <div class="text-right pb-3 px-3">
-    <a href="{{route('comics.create')}}"><i style="font-size: 2rem" class="fas fa-plus-square"></i></a>
+    <a href="{{route('comics.create')}}"><i style="font-size: 2rem" class="fas fa-plus-circle"></i></a>
 </div>
 <table class="table">
     <thead>

@@ -1,4 +1,4 @@
-<footer class="p-3">SITE FOOTER</footer>
+<footer class="px-3 py-4">SITE FOOTER</footer>
 
 </body>
 

@@ -1,6 +1,6 @@
 @extends('layout.app')
 
-@section('title','Comics {{$comic->title}}')
+@section('title','Comic: '.$comic->title)
 
 @section('content')
 
