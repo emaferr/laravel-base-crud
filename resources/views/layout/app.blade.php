@@ -11,16 +11,23 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
 
         <!-- Styles -->
-        
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
     </head>
 
     <body>
 
-        <header>SITE HEADER&nbsp;<a href="{{route('home')}}">Home</a>&nbsp;<a href="{{route('comics')}}">Comics</a></header>
+        <header class="p-3">
+            SITE HEADER
+            <div class="pt-3">
+                <a class="pr-3" href="{{route('home')}}">Home</a>
+                <a href="{{route('comics.index')}}">Comics</a>
+            </div>
+        </header>
 
-        <main>@yield('content')</main>
+        <main class="p-3">@yield('content')</main>
 
-        <footer>SITE FOOTER</footer>
+        <footer class="p-3">SITE FOOTER</footer>
 
     </body>
 </html>
