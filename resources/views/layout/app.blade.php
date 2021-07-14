@@ -16,11 +16,11 @@
 
     <body>
 
-        <header>SITE HEADER</header>
+        <header>SITE HEADER&nbsp;<a href="">Home</a>&nbsp;<a href="">Comics</a></header>
 
         <main>@yield('content')</main>
 
         <footer>SITE FOOTER</footer>
-        
+
     </body>
 </html>
