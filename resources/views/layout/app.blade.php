@@ -1,33 +1,8 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
+@include('layout.partials.head')
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@include('layout.partials.header')
 
-        <title>@yield('title','Laravel')</title>
+<main class="p-3">@yield('content')</main>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
+@include('layout.partials.footer')
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-
-    </head>
-
-    <body>
-
-        <header class="p-3">
-            SITE HEADER
-            <div class="pt-3">
-                <a class="pr-3" href="{{route('home')}}">Home</a>
-                <a href="{{route('comics.index')}}">Comics</a>
-            </div>
-        </header>
-
-        <main class="p-3">@yield('content')</main>
-
-        <footer class="p-3">SITE FOOTER</footer>
-
-    </body>
-</html>
