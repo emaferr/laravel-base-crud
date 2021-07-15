@@ -1,0 +1,14 @@
+.action{
+    display: flex;
+    padding: .5rem;
+}
+
+#trash{
+    background-color: transparent;
+    border: none;
+    i{
+        &:hover{
+        color: $red;
+        }
+    }
+}

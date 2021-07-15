@@ -14621,3 +14621,16 @@ a:hover {
 .active {
   color: #3490dc !important;
 }
+
+.action {
+  display: flex;
+  padding: 0.5rem;
+}
+
+#trash {
+  background-color: transparent;
+  border: none;
+}
+#trash i:hover {
+  color: #e3342f;
+}

@@ -2,7 +2,7 @@
 <div class="text-right pb-3 px-3">
     <a href="{{route('comics.create')}}"><i style="font-size: 2rem" class="fas fa-plus-circle"></i></a>
 </div>
-<table class="table">
+<table class="table container">
     <thead>
         <tr>
             <th>ID</th>
@@ -11,6 +11,7 @@
             <th>AUTOR</th>
             <th>DESCRIPTION</th>
             <th>PRICE</th>
+            <th>ACTIONS</th>
         </tr>
     </thead>
     <tbody>
@@ -22,6 +23,14 @@
             <td>{{$comic->autor}}</td>
             <td>{{$comic->desc}}</td>
             <td>&euro;&nbsp;{{$comic->price}}</td>
+            <td class="action">
+                <a class="px-2" href="{{route('comics.edit',$comic->id)}}">EDIT</a>
+                <form action="{{route('comics.destroy',$comic->id)}}" method="POST">
+                @csrf
+                @method('DELETE')
+                <button id="trash" type="submit"><i class="fas fa-trash"></i></button>
+                </form>
+            </td>
         </tr>
         @endforeach
     </tbody>
