@@ -26,7 +26,7 @@
                 <form action="{{route('movies.destroy',$movie->id)}}" method="POST">
                 @csrf
                 @method('DELETE')
-                <button id="trash" type="submit"><i class="fas fa-trash"></i></button>
+                <button id="trash" type="submit" onclick="return confirm('Are you sure?')"><i class="fas fa-trash"></i></button>
                 </form>
             </td>
         </tr>
