@@ -89,7 +89,26 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
-        $comic->update($request->all());
+        // $comic->update($request->validate([
+        //     'poster' => 'required',
+        //     'title' => 'required | min:5 | max:100',
+        //     'autor' => 'required | min:5 | max:150',
+        //     'desc' => 'required',
+        //     'price' => 'required'
+        // ]));
+
+        $validated = $request->validate([
+            'poster' => 'required',
+            'title' => 'required | min:5 | max:100',
+            'autor' => 'required | min:5 | max:150',
+            'desc' => 'required',
+            'price' => 'required'
+        ]);
+
+        // Comic::update($validated);
+
+        $comic->update($validated);
+
         return redirect('comics');
         
     }

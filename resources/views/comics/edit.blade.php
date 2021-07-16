@@ -5,6 +5,9 @@
 @section('content')
 <h1>COMICS EDIT</h1>
 <div class="container-xl pt-3">
+
+    @include('layout.partials.error')
+    
     <div class="d-flex flex-column">
         <h2>Edit a comic</h2>
     <form action="{{route('comics.update',$comic->id)}}" method="POST">

@@ -6,6 +6,8 @@
 <h1>COMICS CREATE</h1>
 <div class="container-xl pt-3">
 
+    @include('layout.partials.error')
+
     <div class="d-flex flex-column">
         <h2>Add a comic</h2>
     <form action="{{route('comics.store')}}" method="POST">
@@ -13,7 +15,7 @@
         <div class="form-group">
             <label for="">Poster</label>
             <input type="text" name="poster" id="poster" class="form-control" placeholder="Add URL..."
-                aria-describedby="helpId" value="{{old('poster')}}" required>
+                aria-describedby="helpId" value="{{old('poster')}}">
             <small id="helpId" class="text-muted">Write the URL image of the comic</small>
         </div>
     
