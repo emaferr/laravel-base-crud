@@ -3,7 +3,7 @@
     <a href="{{route('movies.index')}}"><i style="font-size: 2rem" class="fas fa-arrow-circle-left"></i></a>
 </div>
 {{-- {{dd(Route::currentRouteName())}} --}}
-<div class="text-center">
+<div class="text-center container">
     <img class='py-3' src="{{$movie->poster}}" alt="">
     <div class="body">
         <h3 class="py-3">{{$movie->title}}</h3>
